@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;
+    text-align: center;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+button {
+    padding: 11px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 75vw;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    gap: 45px;
+    padding: 16px;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    flex-basis: 30%;
+}
+
+.settings input[type='color'] {
+    margin: 0 auto;
+}
+
+.color_selector {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    box-shadow: 3px 6px 10px gray;
+}
+
+.color_selector::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+#range_selector {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 10px;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    width: 22px;
+    height: 22px;
+    border-radius: 10px;
+    background-color: black;
+    -webkit-appearance: none;
+}
+
+.sketch_board {
+    background-color: white;
+    flex-basis: 50%;
+    box-shadow: 2px 1px 5px grey;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid {
+    border: 1px solid black;
+}
